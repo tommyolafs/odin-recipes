@@ -16,34 +16,59 @@ body {
     height: auto;
     padding: 10px;
     margin: 20px auto;
-    text-align: center;
 }
 
 .container h1 {
     background-color: rgb(85, 85, 85);
     padding: 5px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-.recipe-list {
-    list-style: none;
+.container__section {
+    box-sizing: border-box;
     background-color: rgb(85, 85, 85);
-    padding: 5px;
+    padding: 10px;
 }
 
-.recipe-list li {
+/* ./index.html specific */
+ul.container__section {
+    text-align: center;
+}
+
+ul.container__section li {
     display: inline-block;
     margin: 0 25px;
     border: 2px white dashed;
 }
 
-.recipe-list li:hover {
+ul.container__section li:hover {
     background-color: rgb(120,120,120);
     transition: 0.1s;
 }
 
-.recipe-list li a {
+ul.container__section li a {
     display: inline-block;
     text-decoration: none;
     padding: 5px;
+}
+
+
+/* ./recipes/*.html specific */
+div.container__section {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+div.container__section h2 {
+    margin-bottom: 5px;
+}
+
+div.container__section ol,
+div.container__section ul {
+    margin-left: 25px;
+}
+
+div.container__section li {
+    margin-top: 4px;
 }
